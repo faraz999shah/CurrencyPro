@@ -14,14 +14,14 @@
     "javascript",
     "web-app"
   ],
-  "author": "Your Name",
-  "license": "MIT",
+  "author": "Faraz Shah",
+  "private": true,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yourusername/CurrencyPro.git"
+    "url": "git+https://github.com/faraz999shah/CurrencyPro.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/CurrencyPro/issues"
+    "url": "https://github.com/faraz999shah/CurrencyPro/issues"
   },
-  "homepage": "https://github.com/yourusername/CurrencyPro#readme"
+  "homepage": "https://github.com/faraz999shah/CurrencyPro#readme"
 }
