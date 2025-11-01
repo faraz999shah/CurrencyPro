@@ -1,0 +1,27 @@
+{
+  "name": "currencypro",
+  "version": "1.0.0",
+  "description": "A modern currency converter web application with real-time exchange rates",
+  "main": "script.js",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "currency",
+    "converter",
+    "exchange-rates",
+    "javascript",
+    "web-app"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/CurrencyPro.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/CurrencyPro/issues"
+  },
+  "homepage": "https://github.com/yourusername/CurrencyPro#readme"
+}

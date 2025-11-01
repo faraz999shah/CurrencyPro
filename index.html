@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CurrencyPro — Converter</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="/">
+        <svg class="brand-mark" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+          <g transform="rotate(-22 12 12)" fill="#0A112F">
+            <circle cx="7.0" cy="7.0" r="4.2"/>
+            <circle cx="17.0" cy="6.0" r="4.2"/>
+            <circle cx="6.0" cy="17.0" r="4.2"/>
+            <circle cx="16.0" cy="16.0" r="4.2"/>
+          </g>
+        </svg>
+        <span class="brand-name">Currency<span class="brand-accent">Pro</span></span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary">
+        <a href="#">Currency Converter</a>
+        <a href="#">Features</a>
+        <a href="#">Resources</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="link" href="#">Log in</a>
+        <a class="btn btn-primary" href="#">Learn More</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <header class="hero-headline">
+          <h1>The safe and easy way to <span class="accent">exchange your money</span></h1>
+          <p>You always get the best exchange rate with Currencypro, whether you send, spend, or convert money in dozens of currencies. But don’t take our word for it.</p>
+        </header>
+
+        <div class="currency-pickers">
+          <div class="picker" id="picker-base">
+            <h2 class="picker-title">Select your base currency</h2>
+            <div class="card-row">
+              <button class="currency-card">
+                <div class="currency-top"><span class="flag" aria-hidden="true">🇺🇸</span><strong>USD</strong></div>
+                <span class="currency-name">United States Dollar</span>
+              </button>
+              <button class="currency-card is-active">
+                <div class="currency-top"><span class="flag" aria-hidden="true">🇪🇺</span><strong>EUR</strong></div>
+                <span class="currency-name">Euro</span>
+              </button>
+              <button class="currency-card">
+                <div class="currency-top"><span class="flag" aria-hidden="true">🇨🇦</span><strong>CAD</strong></div>
+                <span class="currency-name">Canadian Dollar</span>
+              </button>
+              <button class="currency-card">
+                <div class="currency-top"><span class="flag" aria-hidden="true">🇵🇰</span><strong>PKR</strong></div>
+                <span class="currency-name">Pakistani Rupee</span>
+              </button>
+            </div>
+
+            <div class="card-row">
+              <button class="currency-card">
+                <div class="currency-top"><span class="flag" aria-hidden="true">🇮🇳</span><strong>INR</strong></div>
+                <span class="currency-name">Indian Rupee</span>
+              </button>
+              <button class="currency-card">
+                <div class="currency-top"><span class="flag" aria-hidden="true">🇬🇧</span><strong>GBP</strong></div>
+                <span class="currency-name">Pound Sterling</span>
+              </button>
+              <button class="currency-card">
+                <div class="currency-top"><span class="flag" aria-hidden="true">🇧🇷</span><strong>BRL</strong></div>
+                <span class="currency-name">Brazilian Real</span>
+              </button>
+              <button class="currency-card">
+                <div class="currency-top"><span class="flag" aria-hidden="true">🇮🇩</span><strong>IDR</strong></div>
+                <span class="currency-name">Indonesian Rupiah</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="picker" id="picker-target">
+            <h2 class="picker-title">Select your target currency</h2>
+            <div class="card-row">
+              <button class="currency-card">
+                <div class="currency-top"><span class="flag" aria-hidden="true">🇺🇸</span><strong>USD</strong></div>
+                <span class="currency-name">United States Dollar</span>
+              </button>
+              <button class="currency-card is-dimmed">
+                <div class="currency-top"><span class="flag" aria-hidden="true">🇪🇺</span><strong>EUR</strong></div>
+                <span class="currency-name">Euro</span>
+              </button>
+              <button class="currency-card is-active">
+                <div class="currency-top"><span class="flag" aria-hidden="true">🇨🇦</span><strong>CAD</strong></div>
+                <span class="currency-name">Canadian Dollar</span>
+              </button>
+              <button class="currency-card">
+                <div class="currency-top"><span class="flag" aria-hidden="true">🇵🇰</span><strong>PKR</strong></div>
+                <span class="currency-name">Pakistani Rupee</span>
+              </button>
+            </div>
+
+            <div class="card-row">
+              <button class="currency-card">
+                <div class="currency-top"><span class="flag" aria-hidden="true">🇮🇳</span><strong>INR</strong></div>
+                <span class="currency-name">Indian Rupee</span>
+              </button>
+              <button class="currency-card">
+                <div class="currency-top"><span class="flag" aria-hidden="true">🇬🇧</span><strong>GBP</strong></div>
+                <span class="currency-name">Pound Sterling</span>
+              </button>
+              <button class="currency-card">
+                <div class="currency-top"><span class="flag" aria-hidden="true">🇧🇷</span><strong>BRL</strong></div>
+                <span class="currency-name">Brazilian Real</span>
+              </button>
+              <button class="currency-card">
+                <div class="currency-top"><span class="flag" aria-hidden="true">🇮🇩</span><strong>IDR</strong></div>
+                <span class="currency-name">Indonesian Rupiah</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="cta-row">
+            <span></span>
+            <a href="#" class="btn btn-primary btn-round">Track exchange rate</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="converter" class="converter is-hidden" aria-live="polite">
+      <div class="converter-inner">
+        <h2 class="converter-title">Currency<span class="brand-accent">Pro</span> Converter</h2>
+        <p class="converter-sub">Check live foreign currency exchange rates</p>
+
+        <label class="amount-label" for="amount">Enter Amount</label>
+        <input id="amount" class="amount-input" type="number" min="0" step="0.01" value="1.00" />
+
+        <div class="pair-row">
+          <button class="chip" id="chip-base">
+            <span class="chip-flag" id="chip-base-flag">🇪🇺</span>
+            <span class="chip-text"><b id="chip-base-code">EUR</b><span id="chip-base-name">– Euro</span></span>
+          </button>
+
+          <button class="chip chip-swap" id="chip-swap" aria-label="Swap currencies">↔</button>
+
+          <button class="chip" id="chip-target">
+            <span class="chip-flag" id="chip-target-flag">🇺🇸</span>
+            <span class="chip-text"><b id="chip-target-code">USD</b><span id="chip-target-name">– US Dollar</span></span>
+          </button>
+        </div>
+
+        <p class="equation">
+          <span id="eq-amount">1.00</span>
+          <span id="eq-base-name">Euro</span>
+          =
+        </p>
+
+        <p class="result">
+          <span id="result-number">0.0000</span>
+          <span id="result-target-name">US Dollars</span>
+        </p>
+
+        <p class="meta">
+          <a id="pair-link" href="#">Base to Target conversion</a>
+          — Last updated <span id="last-updated">—</span>
+          <span class="button-group">
+            <button id="btn-refresh" class="btn btn-outline">Refresh</button>
+            <button id="btn-back" class="btn btn-accent">Go Back</button>
+          </span>
+        </p>
+
+        <p class="error" id="conv-error" role="alert"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-top">
+        <a class="brand footer-brand" href="#">
+          <svg class="brand-mark" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+            <g transform="rotate(-22 12 12)" fill="#0A112F">
+              <circle cx="7.0" cy="7.0" r="4.2"/>
+              <circle cx="17.0" cy="6.0" r="4.2"/>
+              <circle cx="6.0" cy="17.0" r="4.2"/>
+              <circle cx="16.0" cy="16.0" r="4.2"/>
+            </g>
+          </svg>
+          <span class="brand-name">Currency<span class="brand-accent">Pro</span></span>
+        </a>
+        <nav class="footer-nav">
+          <div class="col"><h3>How it Works</h3><a href="#">Hire Employees</a><a href="#">Hire Contractors</a><a href="#">Global Payroll</a><a href="#">Integrations</a></div>
+          <div class="col"><h3>Company</h3><a href="#">About</a><a href="#">Contact</a><a href="#">Countries</a><a href="#">Careers</a></div>
+          <div class="col"><h3>Solutions</h3><a href="#">Compliance</a><a href="#">Payments</a><a href="#">Taxes</a><a href="#">Enterprise</a></div>
+          <div class="col"><h3>Resources</h3><a href="#">FAQ</a><a href="#">Blog</a><a href="#">Open API</a><a href="#">Guide</a></div>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <div class="legal"><span>©2025. All Rights Reserved.</span><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+        <div class="socials"><a class="social" href="#" aria-label="Instagram">⌾</a><a class="social" href="#" aria-label="Facebook">f</a><a class="social" href="#" aria-label="LinkedIn">in</a><a class="social" href="#" aria-label="Twitter/X">t</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
